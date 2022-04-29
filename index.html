@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <heaedr class="shadow-sm d-flex justify-content-between">
+        <div class="my-3 mx-5">Хадеев Даниил Маратович</div>
+        <div class="my-3"> 201-324</div>
+        <div class="my-3 mx-5">29.04.2022</div>
+    </heaedr>
+    <main class="vh-100 d-flex justify-content-center">
+        <form action="https://httpbin.org/post" method="POST"
+            class="shadow-lg h-50 w-50 my-auto d-flex flex-column justify-content-center">
+            <div class="w-75 h-75 mx-auto d-flex flex-column justify-content-between">
+                <label class="w-100" for="email"><input name="email" class="w-100" id="email" class="px-2"
+                        placeholder="Email" type="text" /></label>
+                <label class="w-100" for="password"><input name="password" class="w-100" id="password" class="px-2"
+                        placeholder="Пароль" type="password" /></label>
+                <label class="w-100" for="agreecontract">
+                    <span>Согласние с договором</span>
+                    <input name="agreecontract" id="agreecontract" class="px-2" placeholder="Согласие с договором"
+                        type="checkbox" /></label>
+                <label class="w-100" for="agreeinfo">
+                    <span>Согласие на обработку персональных данных</span>
+                    <input name="agreeinfo" id="agreeinfo" class="px-2" placeholder="Согласие с обработкой данных"
+                        type="checkbox" /></label>
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
